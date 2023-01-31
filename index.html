@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Lisandro E.">
+    <meta name="description" content="Portafolio de desarrollador web">
+    <meta name="keywords" content="Html,Css,Javascript,React">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
+    <title>CV Lisandro Oyarzabal</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/arbolvidagreen.svg">
+    <!-- Bootstrap   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Icons Bootstrap -->
+    
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Rubik+Dirt&display=swap" rel="stylesheet">
+   
+ </head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbartoggler" aria-controls="navbartoggler" aria-expanded="false" aria-label="toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+            <img src="image/arbolvidagreen.svg" width="50" alt="logo de la web"></a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#inicio">INICIO</a>
+             </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quien">QUIEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiencia">PARA QUIEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">COMO</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+   
+      <!-- Seccion inicio -->
+   <section id="inicio" class="seccion-oscura">
+    <div class="contenedor" >
+      <img src="image/pngegg.png" alt="imagen cerebro">
+    </div>
+    <div class="seccion-clara">
+      Me gusto este logo con el fondo negro
+    </div>
+    <div>
+      <p><p></p>
+    </div>
+   </section>
+   
+   <!--Seccion quien -->
+   <section id="quien" class="sobre-mi seccion-clara">
+    <div class="contenedor" >
+      <img src="image/pngwing.com.png">
+      <h2 class="seccion-titulo texto-blanco">Quien soy?</h2>
+      <p class="seccion-texto"> Mi nombre es Lisandro, me dedico profesionalmente al diseño de sitios web, tiendas virtuales, aplicaciones moviles y plataformas de streaming. Claramente esto es mentira, recien estoy haciendo un curso de introduccion al frontend.</p>
+    </div>
+   </section>
+   
+   <!-- Seccion para quien -->
+   <section id="experiencia" class="experiencia">
+    <div>
+      <h2 class="seccion-titulo texto-blanco">Para quien trabajamos?</h2>
+    </div>
+    <div class="experiencia">
+      <img src="image/ACN_BIG.svg" width="100" alt="imagen1">
+      <img src="image/Amazon_(company)-Logo.wine.svg" width="100" alt="imagen1">
+      <img src="image/adidas-logo.svg" width="100" alt="imagen1">
+      <img src="image/starbucks-coffee-logo-svg-vector.svg" width="100" alt="imagen1">
+    </div>
+
+   </section>
+
+   <!-- Seccion como-->
+   <section id="contacto" class="contacto">
+    <div>
+      32st Park av. Michigan | 223 543 33234 | mail@mail.com
+      <a id="wa" target="_blank" href="https://api.whatsapp.com/send?phone=5492236151989">
+      <img src="image/wa.png" alt="logo whatsapp">
+    </a> 
+    </div>
+    <div>
+      <form>
+        <p>Introduzca su direccion de mail:</p>
+        <input id='email'>
+        <button type='submit' id='validate'>Validar</button>
+        </form>
+        <h2 id='result'></h2>
+    </div>
+    </section>
+    
+    
+  
+</body>
+<script src="js/script.js"></script>
+</html>
