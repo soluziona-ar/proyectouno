@@ -1,24 +1,13 @@
 /* barra de navegacion */
 .navbar{
     padding: 2rem;
-    background-color:rgb(3, 3, 3)
+    background:rgb(0, 0, 0)
    
+    
 }
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(3, 3, 3);
-    width: 90%;
-    position: fixed;
-    z-index: 100;
-   
-  
-   
-}
-   
-
-.nav-link {
-    color: aqua;
     
 }
 
@@ -35,13 +24,19 @@ section {
 h1{
     font-size: 2.5 rem;
     font-family: 'arial', cursive;
-}  
+} 
+h4{
+    background-color: blue;
+}
 
 .seccion-clara{
     color: rgb(255, 255, 255);
     text-align: center;
+    background-color: white;
 }
-
+.seccion-oscura{
+    color:white;
+}
 .seccion-titulo{
     font-size: 2rem;
     padding: 15px 0;
@@ -49,16 +44,17 @@ h1{
 }
 .seccion-texto{
     font-size: 1.2rem
+    
+
 }
-
-
 /* sobre mi */
 .sobre-mi {
-    height: 500px;
-    padding: 10px;
+    height: 1rem;
+    padding: 25%;
+    color: rgb(80, 80, 80);
 }
 .sobre-mi .contenedor {
-    max-width: 600px;
+    max-width: 100%;
     text-align: center;
 }
 /* Experiencia */
@@ -68,21 +64,103 @@ h1{
     background-color: aliceblue;
 
 }
-.contacto{
-    color:darkgrey;
+/* Contacto */
+
+.contacto.container{
+    max-width: 900px;
+    min-height: 100px;
+    padding: 20px;
 }
+.contacto.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.contacto .decripcion{
+    color:white;
+    font-size: 1.2rem;
+}
+.contacto button{
+    color:white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover{
+    background-color: white;
+    color: black; 
+
+}
+
+.contacto button i{
+    color:white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}   
+.contacto button:hover i{
+    color: black;
+}
+
 
 #wa{
     position: fixed;
     bottom: 30px;
     right: 30px;
+}    
     
-    
 
+.btn-flotante {
+	font-size: 32px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	color: #0264f8; /* Color del texto */
+	border-radius: 5px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color: #E91E63; /* Color de fondo */
+	padding: 10px 10px; /* Relleno del boton */
+	position: fixed;
+	bottom: 130px;
+	right: 35px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
 
+.btn-flotante2 {
+	font-size: 16px; /* Cambiar el tamaño de la tipografia */
+	/*text-transform: uppercase; /* Texto en mayusculas */
+	/*font-weight: bold; /* Fuente en negrita o bold */
+	color: #0264f8; /* Color del texto */
+	border-radius: 0px; /* Borde del boton */
+	letter-spacing: 0px; /* Espacio entre letras */
+	/*background-color: #E91E63; /* Color de fondo */
+	padding: 0px 0px; /* Relleno del boton */
+	position: fixed;
+	bottom: 250px;
+	right: 25px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
 
-
-
+.btn-flotante:hover {
+	background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+	}
+} 
 
 /* Adaptable (responsive) */
 @media screen and (max-width: 767px){
@@ -90,10 +168,5 @@ h1{
     display:none;
     }
 }
-@media screen and (min-width: 700px) {
-.hero-inferior-imagen{
-    max-width: 600px;
-}
-}
 
-}
+

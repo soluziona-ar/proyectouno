@@ -1,17 +1,15 @@
-function validateEmailAddress(email) {
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-    }
-    function validate() {
-    $("#result").text("");
-    var emailaddress = $("#email").val();
-    if (validateEmailAddress(emailaddress)) {
-    $("#result").text(emailaddress + " is valid :)");
-    $("#result").css("color", "green");
-    } else {
-    $("#result").text(emailaddress + " is not correct, please retry:(");
-    $("#result").css("color", "red");
-    }
-    return false;
-    }
-    $("#validate").bind("click", validate);
+var IE = document.all?true:false;
+if (!IE) document.captureEvents(Event.MOUSEMOVE)
+document.onmousemove = getMouseXY;
+var tempX = 0;
+var tempY = 0;
+function getMouseXY(e) {
+if (IE) {
+    tempX = event.clientX + document.body.scrollLeft; tempY = event.clientY + document.body.scrollTop;
+        }
+else {tempX = e.pageX;tempY = e.pageY;}  
+if (tempX < 0){tempX = 0;}
+if (tempY < 0){tempY = 0;}  
+document.Show.MouseX.value = tempX;
+document.Show.MouseY.value = tempY;
+return true;}
